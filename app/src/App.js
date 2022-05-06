@@ -7,13 +7,13 @@ import {Watched} from "./components/Watched";
 import {Add} from "./components/Add";
 import {GlobalProvider} from "./context/GlobalState";
 
-
+import './lib/font-awesome/css/all.min.css'
 import './App.css';
 
 function App() {
-  return (
-    <>
-    <GlobalProvider>
+    return (
+        <>
+            <GlobalProvider>
                 <BrowserRouter>
                     <Header/>
                     <Routes>
@@ -23,8 +23,8 @@ function App() {
                     </Routes>
                 </BrowserRouter>
             </GlobalProvider>
-    </>
-  );
+        </>
+    );
 }
 
 export default App;
